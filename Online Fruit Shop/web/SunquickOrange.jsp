@@ -1,5 +1,4 @@
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,6 +7,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Login As User</h1>
+        <h1>SUNQUICK ORANGE</h1>
     </body>
 </html>

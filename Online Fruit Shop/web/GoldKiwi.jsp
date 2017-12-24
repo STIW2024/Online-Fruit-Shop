@@ -8,6 +8,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Login As User</h1>
+        <h1>GOLD KIWI</h1>
     </body>
 </html>
