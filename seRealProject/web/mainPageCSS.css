@@ -1,0 +1,87 @@
+.header{
+    top: 0;
+    right:0;
+    left: 0;
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+.header p{
+    text-align: center;
+    font-size: 35px;
+}
+.header a{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 5%;
+}
+.clearfix{
+    overflow: auto;
+}
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    color: whitesmoke;
+    padding: 1rem;
+}
+.footer a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    width: 30%;
+}
+.footer a:hover {
+    background-color: black;
+    color: white;
+}
+div.gallery {
+    margin: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/* Main Page Of Admin View */
+.container{
+    float: left;
+    padding: 20px;
+}
+.menu{
+    width: 40%;
+    margin: 20px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: activeborder;
+    color: gray;
+}
+.menu li:hover{
+    background-color: #0099cc;
+}
