@@ -1,4 +1,5 @@
 
+<%@page import="javax.swing.JOptionPane"%>
 <%@page import="java.sql.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -25,12 +26,19 @@
                     session.setAttribute("username", username);
                         response.sendRedirect("mainPage.jsp");
                 }else{
-                    response.sendRedirect("index.html");
+                    String message = (String)request.getAttribute("ErrorMessage");
+                    %>
+                    <script type="text/javascript">
+                        var msg = "Wrong Username Or Password\n         Please Check Again";
+                        alert(msg);
+                        location="index.html";
+                    </script>
+                    <%
+                    //response.sendRedirect("index.html");
                 }
             } catch (Exception e) {
                 out.println(e);
-            }
-            
+            }          
         %>
     </body>
 </html>

@@ -10,7 +10,6 @@
     <body>
         <div class="header">
             <%
-                //String a = session.getAttribute("username").toString();
                 String b = session.getAttribute("usernamea").toString();
                 out.println("Login As Admin __ " + b);
             %>

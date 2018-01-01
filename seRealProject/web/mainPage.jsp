@@ -7,12 +7,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Online Fruit Sales</title>
     </head>
-    <body>
+    <body onload="welcome()">
         <div class="header">
             <%
                 String a = session.getAttribute("username").toString();
-                //String b = session.getAttribute("usernamea").toString();
                 out.println("Login As  " + a);
+                // HERE IS CUSTOMER PAGE
             %>
             <p>Online Fruit Sales</p>
             <a href="logout.jsp">Logout</a>
@@ -73,6 +73,9 @@
         </div>
 
         <script>
+            function welcome(){
+                alert("Welcome To Online Fruits Sale Website");
+            }
             function msg1() {// message of contact us
                 alert("\
             Here Is Online Fruit Sale Helping Center\n\

@@ -10,8 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Database</title>
     </head>
-    <body>
-        
+    <body>       
         <%
             String username = request.getParameter("username");
             String password1 = request.getParameter("password1");
@@ -19,11 +18,13 @@
             String custName = request.getParameter("custName");
             String custPhone = request.getParameter("custPhone");
             String custAddr = request.getParameter("custAddr");
+            String payment = request.getParameter("payment");
+            String cardNum = request.getParameter("cardNum");
             try{
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/seproj","root","");//URL, ID, Password for Database
                 Statement st = connect.createStatement();
-                st.executeUpdate("insert into loginforcust values('"+username+"','"+password1+"','"+email+"','"+custName+"','"+custPhone+"','"+custAddr+"')");
+                st.executeUpdate("insert into loginforcust values('"+username+"','"+password1+"','"+email+"','"+custName+"','"+custPhone+"','"+custAddr+"','"+payment+"','"+cardNum+"')");
             }catch(Exception e){
                 out.println(e);
             }
