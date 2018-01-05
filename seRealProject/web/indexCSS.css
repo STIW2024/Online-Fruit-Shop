@@ -1,0 +1,68 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+.column{
+    float: left;
+    padding: 15px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu{
+    width: 40%;
+}
+.content{
+    width: 60%;
+}
+.footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: grey;
+    color: whitesmoke;
+    padding: 1rem;
+}
+.footer a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+    width: 33.33%;
+}
+.footer a:hover {
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 0;
+    cursor: pointer;
+    width: 30%
+}
+.loginbtn, .signupbtn{
+    float: left;
+    width: 100%;
+}
+.signupbtn{
+    padding: 10px 10px;
+    background-color: #ccc;
+}
+
+
