@@ -1,0 +1,95 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="indexCSS.css" >
+        <title>Online Fruit Sales</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="header">
+            <a href="loginasadmin.jsp" onclick="banner()">AdminLogin</a>
+            <Center><h1>Welcome To Online Fruit Sales</h1></Center>
+        </div>
+        <div class="clearfix">
+            <div class="column menu">
+                <fieldset>
+                    <legend><h3>Login As Customer</h3></legend>
+                    <form action="login.jsp" method="post">
+                        <b>Username:</b>
+                        <br>
+                        <input type="text" name="username" size="20" placeholder="Enter Username"/>
+                        <br>
+                        <b>Password:</b>
+                        <br>
+                        <input type="password" name="password1" size="20" placeholder="Enter Password"/>
+                        <br>
+                        <button type="submit" class="loginbtn" value="Login">Login</button> 
+                    </form>
+                    <form action="signin.jsp" method="post">
+                        <button type="submit" class="signupbtn" value="submit" >Sign Up</button>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="column content">
+                <H1>Online Fruit Sales</h1>
+                <p>We are Selling Local Fruit that produce from Malaysia</p>
+                <p>Everyday We are getting the Freshest from Our farm</p>
+                <p>And We Guaranteed that Our Fruits are 100% FRESH</p>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="footer">
+            <a href="#" onclick="msg1()">Contact Us</a>
+            <a href="#" onclick="msg2()">About US</a>
+            <a href="#" onclick="msg3()" >Help</a>
+        </div>  
+            <div style="position: absolute; bottom: 4px; background-color: black">
+                    <font size="2" color="white">_2017, Online Fruits Sale. All Right Reserved_</font>
+            </div>
+        <script>
+            function banner() {
+                alert("Unauthorized Access are Strictly Prohibited. Please watch Your Move!");
+            }
+            function msg1() {// message of contact us
+                alert("\
+            Here Is Online Fruit Sale Helping Center\n\
+\n *****************************************************************\n\
+If U wish To Contact us\n\
+U can Contact Us via \n\
+Email ----> kopibryant55@gmail.com\n\
+OR\n\
+OfficePhone Number ----> +60-999-9999\n\
+\n *****************************************************************\n\
+    ##########   Thank You For Your Support !   ##########");
+            }
+            function msg2() { //message of about us
+                alert("\
+    THIS IS STIW2024 SOFRWARE ENGINEERING GROUP PROJECT\n\
+\n *****************************************************************\n\
+This is the HTML AND JSP Created Webside\n\
+GROUP MEMBER :\n\
+ *****************************************************************\n\
+1. WangBo\n\
+2. Lim Kok Peng\n\
+3. Loi Tong Fong\n\
+4.Yang YiFei\n\
+            ##########   THANK YOU!   ##########");
+            }
+            function msg3() { //message of Help
+                alert("\
+        Hello Welcome to Online Fruit Sale HELPING CENTER\n\
+\n *****************************************************************\n\
+LOGIN ---> Login In with Your Registered Username and Password     \n\
+OR                                                                 \n\
+IF You Dont have an account____                                    \n\
+Please Create a new Account by clicking SIGN IN Button          \n\
+Anything Please Contact us via\n\
+Email ----> kopibryant55@gmail.com   \n\
+OR                                                              \n\
+OfficePhone Number ----> +60-999-9999                           \n\
+\n\******************************************************************\n\
+    ##########  Thank You For Your Support !  ##########");
+            }
+        </script>
+    </body>
+</html>
